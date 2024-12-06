@@ -1,0 +1,174 @@
+@font-face {
+    font-family: "ifood-titulo-regular";
+    src: url(fonts/iFoodRCTitulos-Regular.ttf);
+}
+
+@font-face {
+    font-family: "ifood-textos-regular";
+    src: url(fonts/iFoodRCTextos-Regular.ttf);
+}
+
+:root {
+    --red: #ea1d2c;
+    --white: #f1f0f0;
+    --white1: #fff;
+    --gray: #3e3e3e;
+    --red1: #cc1825;
+    --green: #9eb53e;
+    --green1: #b6d048;
+
+    --font1: "ifood-textos-regular";
+    --font2: "ifood-titulo-regular";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font1);
+    background-color: var(--white1);
+}
+
+.header {
+    /* background-color: #9eb53e; */
+    background-color: var(--white); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.header_geral {
+    max-width: 1228px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.header__geralNav {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.header__geralNavLogo {
+    width: 80px;
+}
+
+.header__geralNav a {
+    color: var(--gray);
+    font-size: 1rem;
+}
+
+.header__geralLogin {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.header__geralLoginCriar {
+    color: var(--red);
+    font-size: 1rem;
+}
+
+.header__geralLoginEntrar{
+    background-color: var(--red);
+    color: var(--white1);
+    font-size: 1rem;
+    padding: 0.7rem 1.7rem;
+    border-radius: 4px;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    padding: 60px 0 30px 0;
+}
+
+.welcome__titulo {
+    font-family: var(--font2);
+    font-weight: bold;
+    font-size: 3rem;
+    color: var(--gray);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.welcome__texto {
+    font-size: 1.125rem;
+    font-weight: 300;
+    color: var(--gray);
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    gap: 40px;
+    /* background-color: #9eb53e; */
+
+}
+
+.cards__um {
+    background-color: var(--red);
+    background-image: url(img/restaurant.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    color: var(--white1);
+    font-size: 1.5rem;
+    border-radius: 20px;
+    width: 404px;
+    height: 214px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.cards__umBotao {
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 12px;
+    color: var(--white1);
+    background-color: var(--red1);
+}
+
+.cards__dois {
+    background-color: var(--green1);
+    background-image: url(img/market.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    color: var(--white1);
+    font-size: 1.5rem;
+    border-radius: 20px;
+    width: 404px;
+    height: 214px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    
+}
+
+.cards__doisBotao {
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 12px;
+    color: var(--white1);
+    background-color: var(--green);
+}
